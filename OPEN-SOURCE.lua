@@ -4,7 +4,7 @@ local Window = Rayfield:CreateWindow({
    Name = "Together",
    Icon = 0,
    LoadingTitle = "git rayfield'd",
-   LoadingSubtitle = "by me!!!!AHAHAHHAHAHAHAHHHAHAHAHAHHDAHJAHJDAKHJDAGKLODHJAFIDYHAH&TDGHKAFDGHS",
+   LoadingSubtitle = "nil",
    Theme = "Default",
 
    DisableRayfieldPrompts = false,
