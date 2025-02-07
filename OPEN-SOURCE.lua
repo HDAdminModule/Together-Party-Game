@@ -1,5 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local localchar = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+local localchar = game.Players.LocalPlayer.Character
 local Window = Rayfield:CreateWindow({
    Name = "Together [Party Game] ",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
@@ -54,8 +54,8 @@ local Tab1 = Window:CreateTab("Teleport", 9943307899)
    Name = "(kind of) make everyone invisible",
    Callback = function()
       for i, pl in game.Players:GetPlayers() do
-        local newlocal = pl.Character or pl.CharacterAdded:Wait()
-       for i, v in game.workspace.Level:GetChildren() d
+        local newlocal = pl.Character
+       for i, v in game.workspace.Level:GetChildren() do
           newlocal.PrimaryPart = newlocal:WaitForChild("HumanoidRootPart")
 	        newlocal:WaitForChild("HumanoidRootPart").Position = v.Door.Position
           Rayfield:Notify({
