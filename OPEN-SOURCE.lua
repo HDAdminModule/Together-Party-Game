@@ -1,6 +1,3 @@
-game.Players.LocalPlayer.OnTeleport:Connect(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/RayField/refs/heads/main/Ray1"))()
-end)
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local localchar = game.Players.LocalPlayer.Character
 local Window = Rayfield:CreateWindow({
@@ -36,7 +33,6 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-
 local Tab1 = Window:CreateTab("Teleport", 9943307899)
   local Button = Tab1:CreateButton({
    Name = "TP to Door",
